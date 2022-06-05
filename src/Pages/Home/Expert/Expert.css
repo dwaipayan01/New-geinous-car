@@ -1,0 +1,13 @@
+.display {
+    border-radius: 61px;
+    background: #e0e0e0;
+    box-shadow: 5px 5px 10px #808080,
+        -5px -5px 10px #ffffff;
+    padding: 10px;
+}
+
+.display img {
+    width: 200px;
+    border-radius: 50%;
+
+}
