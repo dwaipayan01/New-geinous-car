@@ -1,8 +1,13 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Card } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 const Service = ({ service }) => {
-    const { name, price, description, img } = service;
+    const { id, name, price, description, img } = service;
+    const navigate = useNavigate();
+    const handleServiceDetail = id => {
+        navigate(`/service/${id}`)
+    }
     return (
         <div>
             <Card style={{ width: '18rem' }}>
@@ -13,7 +18,7 @@ const Service = ({ service }) => {
                     <Card.Text>
                         {description}
                     </Card.Text>
-                    <Button variant="primary">Book {name}</Button>
+                    <Button onClick={() => handleServiceDetail(id)} variant="primary">Book {name}</Button>
                 </Card.Body>
             </Card>
         </div>
