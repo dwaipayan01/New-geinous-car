@@ -7,3 +7,17 @@
     box-shadow: -10px 10px 3px 0px #FFE0B3;
     ;
 }
+
+@media only screen and (max-width:576px) {
+    .design-signup {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (min-width:577px) and (max-width:768px) {
+    .design-signup {
+        width: 100%;
+    }
+
+}

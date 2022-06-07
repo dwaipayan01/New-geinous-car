@@ -8,3 +8,17 @@
 
 
 }
+
+@media only screen and (max-width:576px) {
+    .design-login {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (min-width:577px) and (max-width:768px) {
+    .design-login {
+        width: 100%;
+    }
+
+}
